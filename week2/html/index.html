@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Storage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/localStorage.js"></script>
+  </head>
+
+  <body onload="createListLS()">
+    <div class="gridArea">
+      <section class="students">
+        <fieldset id="s1">
+          <legend>Student #1</legend>
+          <p class="group">
+            <label for="sname1">Student Name</label>
+            <input type="text" name="sname1" id="sname1" value="John Doe" />
+          </p>
+          <p class="group">
+            <label for="sid1">Student ID</label>
+            <input type="text" name="sid1" id="sid1" value="991222333" />
+          </p>
+          <p class="group">
+            <label for="tuition1">Student Tuition Amount</label>
+            <input
+              type="number"
+              name="tuition1"
+              id="tuition1"
+              value="1458.00"
+            />
+          </p>
+          <p class="group">
+            <label for="fees1">Student Fees</label>
+            <input type="number" name="fees1" id="fees1" value="500.00" />
+          </p>
+          <p class="group">
+            <label for="scholarship1">Student Scholarship Amount</label>
+            <input
+              type="number"
+              name="scholarship1"
+              id="scholarship1"
+              value="1000.00"
+            />
+          </p>
+        </fieldset>
+        <fieldset id="s2">
+          <legend>Student #2</legend>
+          <p class="group">
+            <label for="sname2">Student Name</label>
+            <input type="text" name="sname2" id="sname2" value="Jane Doe" />
+          </p>
+          <p class="group">
+            <label for="sid2">Student ID</label>
+            <input type="text" name="sid2" id="sid2" value="991333444" />
+          </p>
+          <p class="group">
+            <label for="tuition2">Student Tuition Amount</label>
+            <input
+              type="number"
+              name="tuition2"
+              id="tuition2"
+              value="1458.00"
+            />
+          </p>
+          <p class="group">
+            <label for="fees2">Student Fees</label>
+            <input type="number" name="fees2" id="fees2" value="250.00" />
+          </p>
+          <p class="group">
+            <label for="scholarship2">Student Scholarship Amount</label>
+            <input
+              type="number"
+              name="scholarship2"
+              id="scholarship2"
+              value="500.00"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <p>
+            <button onclick="saveData()" id="saveData">
+              Save new student data to Local Storage (if change made)
+            </button>
+          </p>
+          <label>Select a student based on Student ID</label>
+          <select id="select" onchange="makeReport()">
+            <!-- Populated on load -->
+          </select>
+        </fieldset>
+      </section>
+
+      <section id="report">
+        <h1>Student Payment Report</h1>
+        <p class="group">
+          <label for="outid">Student ID</label>
+          <input type="text" name="outid" id="outid" />
+        </p>
+        <p class="group">
+          <label for="outname">Student Name</label>
+          <input type="text" name="outname" id="outname" />
+        </p>
+        <p class="group">
+          <label for="outamount">Final Amount Owed</label>
+          <input type="number" name="outamount" id="outamount" />
+        </p>
+        <h4>&copy; Sheridan College</h4>
+        <button id="printData" onclick="printData()">PRINT</button>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.gridArea {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "students report";
+  gap: 5px;
+}
+
+.students {
+  grid-area: students;
+}
+
+#report {
+  grid-area: report;
+}
