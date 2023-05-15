@@ -1,0 +1,49 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.exGrid {
+  place-items: center;
+}
+
+.exHead {
+  text-transform: uppercase;
+  font-size: 1.5em; /* relative unit */
+  color: #222;
+  text-align: center;
+}
+
+.exCampus {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+td:nth-child(1) {
+  text-align: left;
+}
+
+td:nth-child(2) {
+  text-align: right;
+}
+
+.boxHead {
+  background-color: #777;
+  color: white;
+  height: 50px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  font-size: 2em;
+}
+
+.boxBody {
+  background-color: white;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.boxAll {
+  border: black 5px solid;
+}

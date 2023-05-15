@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Head Area -->
+    <meta charset="UTF-8" />
+    <title>CSS Grid Review</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Link to CSS -->
+     <link href="/css/style.css" rel="stylesheet">
+     <!-- Link to JS -->
+     <script src="/js/script.js"></script>
+  </head>
+  <body> <!-- Grouping elemnet -->
+     <!-- Body Area -->
+     <section class="exGrid"> <!-- Grouping elemnet (semantics) -->
+          <header class="exHead"> <!-- Grouping elemnet -->
+               <h1>Sheridan College</h1> <!-- Block element -->
+          </header>
+     <section class="exCampus boxAll">
+          <div class="boxHead"> Sheridan Campuses</div>
+          <div class="boxBody">
+               <p>Davis <br><img src="/assets/davis.png" width="100px"></p>
+               <p>Trafalgar <br><img src="/assets/traf.png" width="100px"></p>
+               <p>HMC <br><img src="/assets/hmc.png" width="100px"></p>
+          </div>
+     </section>
+     <section class="exGPAOut boxAll">
+          <div class="boxHead"> GPA Calculated Output </div>
+          <div class="boxBody">
+               <div id = "current"></div>
+               <hr>
+               <div id="new"></div>
+          </div>
+     </section>
+     <section class="exValues boxAll">
+          <div class="boxHead"> GPA Grade Values </div>
+          <div class="boxBody">
+     <table>
+<tr><td>90-100</td><td>4</td></tr>
+<tr><td>85-89</td><td>3.8</td></tr>
+<tr><td>80-84</td><td>3.6</td></tr>
+<tr><td>75-79</td><td>3.3</td></tr>
+<tr><td>70-74</td><td>3</td></tr>
+<tr><td>65-69</td><td>2.5</td></tr>
+<tr><td>60-64</td><td>2</td></tr>
+<tr><td>55-59</td><td>1.5</td></tr>
+<tr><td>50-54</td><td>1</td></tr>
+<tr><td>F</td><td>9</td></tr>
+     </table>
+     <hr>
+     <table>
+          <tr><td>T1 Credits</td><td>22</td></tr>
+          <tr><td>T2 Credits</td><td>21</td></tr>
+          <tr><td>T3 Credits</td><td>22</td></tr>
+          <tr><td>T4 Credits</td><td>24</td></tr>
+          <tr><td>Total 4 Terms</td><td>89</td></tr>
+     </table>
+          </div>
+     </section>
+     <section class="exGPA boxAll">
+
+          <div class="boxHead">GPA Calculation Data</div>
+          <div class="boxBody">
+               <fieldset><legend>Enter GPA Data</legend></fieldset>
+
+               <label for="cumulative">Enter Your Culmulative GPA</label><br>
+               <input type="number" name="cumulative" id="cumulative" value="2.0"><br>
+
+               <label for="hours">Enter Your Culmulative Credit Hours completed</label><br>
+               <input type="number" name="newHours" id="newHours" value="83"><br>
+
+               <hr>
+
+               <label for="hours">Enter Credit Hours for class to take</label><br>
+               <input type="number" name="newHours" id="newHours" value="6"><br>
+
+               <label for="hours">Enter Numeric Grade to see how it affects cumulative GPA</label><br>
+               <input type="number" name="grade" id="grade" value="3.0"><br>
+
+               <button onclick="">
+          </div>
+     </section>
+  </body>
+</html>
