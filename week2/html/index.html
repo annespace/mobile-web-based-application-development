@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
+  <!--This project will save student information to Local storage-->
   <head>
+    <!--Heading area of our web page-->
     <title>Local Storage</title>
-    <meta charset="utf-8" />
+    <!--Responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link href="css/main.css" rel="stylesheet" />
-    <script src="js/localStorage.js"></script>
+    <!--Set the character set-->
+    <meta charset="utf-8" />
+    <!--Connect our script-->
+    <script src="/js/script.js"></script>
+    <!--Connect our CSS-->
+    <link href="/css/styles.css" rel="stylesheet" />
   </head>
-
-  <body onload="createListLS()">
+  <body>
+    <!--The structure of our web page-->
+    <!--Two students, whose information will be stored-->
     <div class="gridArea">
       <section class="students">
+        <!--This section will be apart of my grid area-->
         <fieldset id="s1">
           <legend>Student #1</legend>
+          <!--Name-->
           <p class="group">
             <label for="sname1">Student Name</label>
             <input type="text" name="sname1" id="sname1" value="John Doe" />
           </p>
+          <!--ID-->
           <p class="group">
             <label for="sid1">Student ID</label>
-            <input type="text" name="sid1" id="sid1" value="991222333" />
+            <input type="number" name="sid1" id="sid1" value="991222333" />
           </p>
+          <!--Tuition-->
           <p class="group">
             <label for="tuition1">Student Tuition Amount</label>
             <input
@@ -31,10 +41,12 @@
               value="1458.00"
             />
           </p>
+          <!--Fees-->
           <p class="group">
             <label for="fees1">Student Fees</label>
             <input type="number" name="fees1" id="fees1" value="500.00" />
           </p>
+          <!--Scholarship-->
           <p class="group">
             <label for="scholarship1">Student Scholarship Amount</label>
             <input
@@ -47,14 +59,17 @@
         </fieldset>
         <fieldset id="s2">
           <legend>Student #2</legend>
+          <!--Name-->
           <p class="group">
             <label for="sname2">Student Name</label>
             <input type="text" name="sname2" id="sname2" value="Jane Doe" />
           </p>
+          <!--ID-->
           <p class="group">
             <label for="sid2">Student ID</label>
-            <input type="text" name="sid2" id="sid2" value="991333444" />
+            <input type="number" name="sid2" id="sid2" value="991222335" />
           </p>
+          <!--Tuition-->
           <p class="group">
             <label for="tuition2">Student Tuition Amount</label>
             <input
@@ -64,17 +79,19 @@
               value="1458.00"
             />
           </p>
+          <!--Fees-->
           <p class="group">
             <label for="fees2">Student Fees</label>
-            <input type="number" name="fees2" id="fees2" value="250.00" />
+            <input type="number" name="fees2" id="fees2" value="500.00" />
           </p>
+          <!--Scholarship-->
           <p class="group">
             <label for="scholarship2">Student Scholarship Amount</label>
             <input
               type="number"
               name="scholarship2"
               id="scholarship2"
-              value="500.00"
+              value="1000.00"
             />
           </p>
         </fieldset>
@@ -86,21 +103,24 @@
           </p>
           <label>Select a student based on Student ID</label>
           <select id="select" onchange="makeReport()">
-            <!-- Populated on load -->
+            <!--Populated on load-->
           </select>
         </fieldset>
       </section>
 
       <section id="report">
         <h1>Student Payment Report</h1>
+        <!--Make an area on the report for student iD-->
         <p class="group">
           <label for="outid">Student ID</label>
           <input type="text" name="outid" id="outid" />
         </p>
+        <!--Make an area on the report for student name-->
         <p class="group">
           <label for="outname">Student Name</label>
           <input type="text" name="outname" id="outname" />
         </p>
+        <!--Make an area on the report for amount owed-->
         <p class="group">
           <label for="outamount">Final Amount Owed</label>
           <input type="number" name="outamount" id="outamount" />
