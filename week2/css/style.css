@@ -12,3 +12,35 @@
 #report {
   grid-area: report;
 }
+
+.group {
+  display: flex;
+}
+label {
+  flex: 1;
+}
+input {
+  flex: 2;
+}
+
+#report {
+  border: thick solid black;
+  padding: 0px 20px 0px 20px;
+  background-color: rgba(0, 0, 255, 0.25);
+  font-size: 1.25em;
+}
+
+@media print {
+  .gridArea {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "report";
+  }
+
+  .students {
+    display: none;
+  }
+  #printData {
+    display: none;
+  }
+}
