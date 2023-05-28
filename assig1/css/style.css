@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px 0px 10px 0px;
+  font-family: Lato, Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 1px;
+  background-color: #bc8f8f;
+  color: #fff;
+}
+
+img {
+  margin: auto;
+  width: 200px;
+  display: block;
+}
+
+h1 {
+  margin: 30px;
+}
+
+#quoteForm {
+  margin: 30px 500px;
+  padding: 50px 50px 30px 50px;
+  background-color: #f0f0f0;
+}
+
+#quoteContent {
+  margin: 30px 500px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+#button {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #fff;
+  border: solid 0.1px;
+}
