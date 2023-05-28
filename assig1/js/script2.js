@@ -36,7 +36,7 @@ if (quoteData) {
     <p><strong>Square Footage:</strong> ${squareFootage} sq ft</p>
 
     <h2>Color</h2>
-    <div style="width: 100px; height: 100px; background-color: ${roomColor};"></div>
+    <div id="color" style="display: flex; justify-content: center; align-items: center; width: 30px; height: 30px;  margin: auto; background-color: ${roomColor};"></div>
 
     <h2>Paint Details</h2>
     <p><strong>Cans Needed:</strong> ${cans}</p>
