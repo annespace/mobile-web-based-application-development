@@ -1,0 +1,65 @@
+<!--
+  Name: Anne Cho
+  Student number: 991655631
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anne Cho</title>
+  </head>
+  <body>
+    <header>
+      <p>Assignment #1 | Anne Cho | 991655631</p>
+    </header>
+
+    <img
+      src="/assets/picture-of-me.jpeg"
+      alt="My Picture"
+      style="display: block; width: 200px"
+    />
+
+    <h1>Painting Quote Form</h1>
+    <form id="quoteForm">
+      <div>
+        <label for="customerName">Customer's Name:</label>
+        <input type="text" id="customerName" required />
+      </div>
+      <div>
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" required />
+      </div>
+      <div>
+        <label for="roomToPaint">Room to Paint:</label>
+        <input type="text" id="roomToPaint" required />
+      </div>
+      <div>
+        <label for="roomWidth">Width of the Room:</label>
+        <input type="number" id="roomWidth" required />
+      </div>
+      <div>
+        <label for="roomLength">Length of the Room:</label>
+        <input type="number" id="roomLength" required />
+      </div>
+      <div>
+        <label for="colorPicker">Room Color:</label>
+        <input type="color" id="colorPicker" required />
+      </div>
+      <div>
+        <label for="paintType">Paint Type:</label>
+        <select id="paintType">
+          <option value="standard">Standard Paint ($24.99 per can)</option>
+          <option value="premium">Premium Paint ($39.99 per can)</option>
+        </select>
+      </div>
+      <button type="submit">Create Quote</button>
+    </form>
+
+    <footer>
+      <p>choann | Trafalgar</p>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
