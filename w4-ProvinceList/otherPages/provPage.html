@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AJAX - JSON - Provinces</title>
+        <link rel="stylesheet" href="../css/mystyles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/myscriptProv.js"></script>
+   
+        <style>
+            .flexArea {display: flex; font-size: 1.25em; text-align: center;}
+            .flex1 {flex: 2; font-style:italic;}
+            .flex2 {flex: 2; font-weight: bold;}
+            hr {width: 75%; border-width: thick; border-color: red;}
+        </style>
+    </head>
+
+    <body>
+        <!--Header-->
+        <section class="namestyle" id="country"></section>
+        <!--Back button to home page-->
+        <section style="text-align: center;">
+            <a href="../index.html">
+            <img src="../images/back.png" width="40px">
+        </a></section>
+        <hr>
+        <!--Province Name-->
+        <section class="flexArea">
+            <div class="flex1">Province Name: </div>
+            <!--Use Javascript to set province name-->
+            <div class="flex2" id="pname"></div>
+        </section>
+        <hr>
+        <!--Capital-->
+        <section class="flexArea">
+            <div class="flex1">Capital: </div>
+            <!--Use JS to get capital-->
+            <div class="flex2" id="capital"></div>
+        </section>
+        <!--Cities-->
+        <section class="flexArea">
+            <!--Use JS again to get flag-->
+            <div class="flex1" id="flag"></div>
+            <!--Use JS again to get list of cities-->
+            <div class="flex2" id="cities"></div>
+        </section>
+    </body>
+</html>
