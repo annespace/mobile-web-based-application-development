@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- SheridanDiner -->
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheridan Diner</title>
+
+<link href="css/main.css" rel="stylesheet">
+<script src="js/indexScript.js"></script>
+
+</head>
+
+<body onload="getJSON()">
+  <div id="restaurantName" class="rhead"></div>
+	<section style="text-align: center;">
+		<span id="rSlogan" class="slogan"></span>
+		...
+		<span id="rPic"></span>
+	</section>
+  <hr>
+	
+	<table>
+		<tr>
+			<td><img onclick="breakfast()" src="images/egg.jpg"><br>BREAKFAST</td>
+			<td><img onclick="lunch()" src="images/wrap.jpg"><br>LUNCH</td>
+			<td><img onclick="dinner()" src="images/steak.jpg"><br>DINNER</td>
+		</tr>
+	</table>
+
+	<hr>
+  <div id="menuItemsList" class="mlist"></div>
+	<hr>
+	<footer>
+		<cite id="citeT">
+			Background Image By I, Ruhrfisch, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3382477
+		</cite>
+	</footer>
+</body>
+</html>
